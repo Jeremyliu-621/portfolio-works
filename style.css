@@ -7,12 +7,32 @@ slush grey #929AAB
 
 /* Optional: responsive stack on small screens */
 @media (max-width: 900px) {
-  .page1 {
+  .page1,
+  .page2 {
     flex-direction: column;
     width: 90%;
   }
-  .right {
+  .right,
+  .carousel {
     flex: 1 1 auto;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url("./assets/zephyr.jpg") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("./assets/zephyr.jpg") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -36,8 +56,6 @@ body {
 /* OUTER LAYOUT: two cards as FLEX */
 .page1 {
   display: flex;
-  grid-row-start: 1;
-  grid-row-end: 2;
   gap: 16px;
   width: 80%;
   min-height: 70vh;
@@ -122,7 +140,7 @@ h2 {
 
 /* PAGE 2 */
 
-#landingpage {
+#projectpage {
   background-color: #f7f7f7; /* fixed: was `white #f7f7f7` */
   margin: 0;
   padding: 0;
@@ -135,8 +153,6 @@ h2 {
 
 .page2 {
   display: flex;
-  grid-row-start: 2;
-  grid-row-end: 3;
   gap: 16px;
   width: 80%;
   min-height: 70vh;
@@ -152,6 +168,42 @@ h2 {
   display: grid; /* inner layout is grid */
 }
 
-.carousel {
+.projects {
   flex: 2;
+}
+
+.projects .carousel {
+  width: 100%;
+  height: 100%; /* match .projects height */
+}
+
+.projects .carousel-inner,
+.projects .carousel-item {
+  height: 100%;
+}
+
+.projects .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fill the box without distortion */
+  object-position: center;
+  border-radius: 10px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("./assets/zephyr.jpg") !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+}
+
+.carousel-control-next-icon {
+  background-image: url("./assets/zephyr.jpg") !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
 }
