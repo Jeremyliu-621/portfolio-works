@@ -214,3 +214,85 @@ h2 {
   flex: auto;
   margin-left: 10px;
 }
+
+/* PAGE 3: EXTENDED PROJECTS PAGE */
+
+#extendedprojectpage {
+  background-color: #f7f7f7; /* fixed: was `white #f7f7f7` */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  */
+}
+
+.page3 {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  gap: 24px;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto repeat(3, auto);
+}
+
+.projects-title {
+  grid-column: 1 / 4; /* span columns 1 → 3 */
+  grid-row: 1; /* first row */
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.projects-title .title-star {
+  width: 10px;
+  height: 10px;
+}
+
+/* PAGE 3: VIDEO PAGE */
+
+#videopage {
+  background-color: #f7f7f7; /* fixed: was `white #f7f7f7` */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page4 {
+  display: flex;
+  gap: 16px;
+  width: 80%;
+  min-height: 70vh;
+  align-items: stretch; /* make both cards same height */
+}
+
+.video-btn {
+  background-color: #eeeeee;
+  color: #393e46;
+  border: 1px solid #929aab;
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin: 1px;
+  font-weight: 300;
+}
+
+.video-btn:hover {
+  background-color: #393e46;
+  color: white;
+}
