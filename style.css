@@ -1,7 +1,94 @@
-.body {
-    display: grid;
+/* 
+white #F7F7F7
+cream #EEEEEE
+dark grey #393E46
+slush grey #929AAB
+*/
+
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
+body {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#landingpage {
+  background-color: #f7f7f7; /* fixed: was `white #f7f7f7` */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* OUTER LAYOUT: two cards as FLEX */
 .page1 {
-    display: grid;  
+  display: flex;
+  gap: 16px;
+  width: 80%;
+  max-width: 1100px;
+  min-height: 70vh;
+  align-items: stretch; /* make both cards same height */
+}
+
+/* LEFT CARD: grid inside for tidy spacing */
+.left {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 20px;
+
+  flex: 1 1 55%; /* grows more; left takes most space */
+  display: grid; /* inner layout is grid */
+}
+
+.left-text {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 12px;
+  max-width: 520px;
+}
+
+h1 {
+  font-family: "Momo Trust Display", sans-serif;
+  color: #393e46;
+  font-size: 28px; /* fixed size */
+  line-height: 1.2;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Momo Trust Display", sans-serif;
+  color: #393e46;
+  font-size: 20px; /* fixed size */
+  line-height: 1.2;
+  margin: 0;
+}
+
+.card-body {
+  background-color: #eeeeee;
+}
+
+/* RIGHT CARD: bootstrap card sits centered in its flex cell */
+.right {
+  flex: 0 0 360px; /* fixed-ish width column for the card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Optional: responsive stack on small screens */
+@media (max-width: 900px) {
+  .page1 {
+    flex-direction: column;
+    width: 90%;
+  }
+  .right {
+    flex: 1 1 auto;
+  }
 }
