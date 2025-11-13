@@ -12,27 +12,10 @@ slush grey #929AAB
     flex-direction: column;
     width: 90%;
   }
+
   .right,
   .carousel {
     flex: 1 1 auto;
-  }
-
-  .carousel-control-prev-icon {
-    background-image: url("./assets/zephyr.jpg") !important;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 32px;
-    height: 32px;
-  }
-
-  .carousel-control-next-icon {
-    background-image: url("./assets/zephyr.jpg") !important;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 32px;
-    height: 32px;
   }
 }
 
@@ -81,7 +64,7 @@ body {
 h1 {
   font-family: "Momo Trust Display", sans-serif;
   color: #393e46;
-  font-size: 35px; /* fixed size */
+  font-size: 45px; /* fixed size */
   line-height: 1.2;
   margin-top: 15px;
 }
@@ -128,7 +111,7 @@ h2 {
   color: #393e46;
   border: 1px solid #929aab;
   border-radius: 8px;
-  padding: 6px 10px;
+  padding: 12px 10px;
   margin: 1px;
   font-weight: 300;
 }
@@ -165,7 +148,12 @@ h2 {
   padding: 20px;
 
   flex: 2; /* grows more; left takes most space */
-  display: grid; /* inner layout is grid */
+}
+
+.skills-text {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects {
@@ -191,7 +179,7 @@ h2 {
 }
 
 .carousel-control-prev-icon {
-  background-image: url("./assets/zephyr.jpg") !important;
+  background-image: url("./assets/image\ \(1\).jpg") !important;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -200,10 +188,27 @@ h2 {
 }
 
 .carousel-control-next-icon {
-  background-image: url("./assets/zephyr.jpg") !important;
+  background-image: url("./assets/drawing-arrow-sketch.jpg") !important;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   width: 32px;
   height: 32px;
+}
+
+.info-stack-separator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0;
+}
+
+.info-stack-separator .carousel-card-body-left {
+  flex: auto;
+  margin-right: 10px;
+}
+
+.info-stack-separator .carousel-card-body-right {
+  flex: auto;
+  margin-left: 10px;
 }
