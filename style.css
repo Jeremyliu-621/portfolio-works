@@ -17,6 +17,9 @@ slush grey #929AAB
   .carousel {
     flex: 1 1 auto;
   }
+  .project {
+    flex-direction: column;
+  }
 }
 
 html,
@@ -231,12 +234,15 @@ h2 {
 
 .page3 {
   display: grid;
+  justify-items: center;
+  align-items: start;
+
   width: 80%;
   margin: 0 auto;
-  gap: 24px;
+  gap: 10px 0px;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
 }
 
 .projects-title {
@@ -247,13 +253,30 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.project:hover {
+  background-color: #393e46;
+  color: white;
 }
 
 .project {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+}
+
+.project .card {
+  padding: 20px;
+}
+
+.card-body-divider {
+  display: flex;
+}
+
+.card-body-one img {
+  width: 200px;
 }
 
 .projects-title .title-star {
@@ -261,7 +284,7 @@ h2 {
   height: 10px;
 }
 
-/* PAGE 3: VIDEO PAGE */
+/* PAGE 4: VIDEO PAGE */
 
 #videopage {
   background-color: #f7f7f7; /* fixed: was `white #f7f7f7` */
