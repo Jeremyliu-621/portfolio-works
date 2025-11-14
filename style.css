@@ -11,6 +11,19 @@ body {
   margin: 0;
 }
 
+.snap-container {
+  height: 100vh; /* full window height */
+  overflow-y: scroll; /* this is the scrolling element */
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth; /* smooth scroll between snaps */
+}
+
+/* each full-screen section */
+.snap-container > section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+}
+
 #landingpage {
   background-color: #f7f7f7; /* fixed: was `white #f7f7f7` */
   margin: 0;
