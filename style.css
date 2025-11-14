@@ -5,28 +5,6 @@ dark grey #393E46
 slush grey #929AAB
 */
 
-/* Optional: responsive stack on small screens */
-@media (max-width: 900px) {
-  .page1,
-  .page2 {
-    flex-direction: column;
-    width: 90%;
-  }
-
-  .right,
-  .carousel {
-    flex: 1 1 auto;
-  }
-  .project {
-    flex-direction: column;
-  }
-
-  .page3 {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 html,
 body {
   height: 100%;
@@ -258,17 +236,19 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .project:hover {
   background-color: #393e46;
   color: white;
+  border-radius: 10px;
 }
 
 .project .card {
   padding: 20px;
   margin: 10px;
+  height: 320px;
 }
 
 .card-header {
@@ -288,6 +268,7 @@ h2 {
 .projects-skill-icons {
   display: flex;
   justify-content: center;
+  align-content: end;
 }
 
 .projects-skill-icons img {
@@ -302,14 +283,30 @@ h2 {
 /* PAGE 4: VIDEO PAGE */
 
 #videopage {
-  background-color: #f7f7f7; /* fixed: was `white #f7f7f7` */
+  background-color: #f7f7f7;
   margin: 0;
   padding: 0;
-  height: 80vh;
-
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* center the 80% container */
   align-items: center;
+}
+
+.page4 {
+  width: 80%; /* same width as other pages */
+  display: flex;
+  justify-content: center; /* center the card inside */
+}
+
+.video-card {
+  width: 100%; /* fill the 80% container */
+  max-width: 1000px; /* you can tweak this */
+}
+
+.video-card .card-img-top {
+  width: 100%;
+  height: 60vh; /* big “video” area */
+  object-fit: contain;
 }
 
 .video-btn {
@@ -325,4 +322,57 @@ h2 {
 .video-btn:hover {
   background-color: #393e46;
   color: white;
+}
+
+.page4 p {
+  display: flex;
+  justify-content: center;
+}
+
+.page4 .btn-group {
+  padding: 0px 15px 15px 15px;
+}
+
+/* PAGE 5: CLOSING PAGE */
+
+#closingpage {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  min-height: 35vh;
+  display: flex;
+  justify-content: center; /* center the 80% container */
+  align-items: center;
+}
+
+.page5 {
+  width: 80%; /* same width as other pages */
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 900px) {
+  .page1,
+  .page2 {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .right,
+  .carousel {
+    flex: 1 1 auto;
+  }
+  .project {
+    flex-direction: column;
+  }
+
+  .page3 {
+    grid-template-columns: 1fr; /* one column */
+    width: 90%; /* optional: a bit wider on small screens */
+  }
+
+  .projects-title {
+    grid-column: 1; /* title just spans that one column */
+    margin-bottom: 24px;
+  }
 }
