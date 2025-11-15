@@ -156,7 +156,7 @@ h3 {
 }
 
 .welcome-img-wrapper {
-  width: 600px; /* whatever size you want your text to appear */
+  width: 300px; /* changes image size */
   height: auto; /* adjust to match your PNG text height */
   overflow: hidden; /* hides image overflow */
 }
@@ -216,14 +216,14 @@ h3 {
 
 .carousel-card {
   height: 100%; /* fill the carousel-item */
-  min-height: 320px; /* consistent minimum height */
+  min-height: 550px; /* consistent minimum height */
   display: flex;
   flex-direction: column;
 }
 
 .projects .carousel-item img {
   width: 100%;
-  height: 180px; /* or 160px, tweak as you like */
+  height: 300px; /* or 160px, tweak as you like */
   object-fit: cover; /* fills area and crops nicely */
   border-radius: 10px 10px 0 0; /* rounded only at top if you want */
   display: block;
@@ -240,10 +240,6 @@ h3 {
 .info-stack-separator .carousel-card-body-left,
 .info-stack-separator .carousel-card-body-right {
   flex: 1;
-}
-
-.carousel-card {
-  height: 320px; /* tune this */
 }
 
 .carousel-control-prev-icon {
@@ -317,6 +313,10 @@ h3 {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+}
+
+.project {
+  width: 100%; /* this is what i tried to make each card take full width. */
 }
 
 .project-link {
@@ -470,6 +470,7 @@ h3 {
     flex: 1 1 auto;
     margin-bottom: 20px;
   }
+
   .project {
     flex-direction: column;
   }
