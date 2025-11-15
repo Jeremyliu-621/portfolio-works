@@ -575,6 +575,19 @@ h3 {
 }
 
 @media (max-width: 550px) {
+  .welcome-img-wrapper {
+    width: 250px; /* changes image size */
+    height: auto; /* adjust to match your PNG text height */
+    overflow: hidden; /* hides image overflow */
+  }
+
+  .skills-img-wrapper {
+    width: 300px; /* changes image size */
+    height: auto; /* adjust to match your PNG text height */
+    overflow: hidden; /* hides image overflow */
+    margin: 20px 0px 0px 0px;
+  }
+
   .social-buttons-wrapper {
     display: grid;
     grid-template-rows: repeat(2, auto);
@@ -584,12 +597,6 @@ h3 {
   }
 
   .social-btn {
-    padding: 20px 20px;
-  }
-}
-
-@media (max-width: 550px) {
-  .social-btn {
-    padding: 20px 10px;
+    padding: 15px 15px;
   }
 }
