@@ -587,3 +587,9 @@ h3 {
     padding: 20px 20px;
   }
 }
+
+@media (max-width: 550px) {
+  .social-btn {
+    padding: 20px 10px;
+  }
+}
