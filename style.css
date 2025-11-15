@@ -545,7 +545,7 @@ h3 {
 
 @media (max-width: 800px) {
   .social-btn {
-    padding: 20px 7px;
+    padding: 20px 10px;
   }
 }
 
@@ -574,7 +574,7 @@ h3 {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .social-buttons-wrapper {
     display: grid;
     grid-template-rows: repeat(2, auto);
