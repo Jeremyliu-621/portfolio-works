@@ -573,3 +573,17 @@ h3 {
     overflow: hidden; /* hides image overflow */
   }
 }
+
+@media (max-width: 500px) {
+  .social-buttons-wrapper {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .social-btn {
+    padding: 20px 20px;
+  }
+}
