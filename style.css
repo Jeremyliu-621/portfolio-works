@@ -548,3 +548,23 @@ h3 {
     padding: 20px 7px;
   }
 }
+
+@media (max-width: 700px) {
+  .welcome-img-wrapper {
+    width: 350px; /* changes image size */
+    height: auto; /* adjust to match your PNG text height */
+    overflow: hidden; /* hides image overflow */
+  }
+
+  .skills-img-wrapper {
+    width: 350px; /* changes image size */
+    height: auto; /* adjust to match your PNG text height */
+    overflow: hidden; /* hides image overflow */
+  }
+
+  .contact-img-wrapper {
+    width: 250px; /* whatever size you want your text to appear */
+    height: auto; /* adjust to match your PNG text height */
+    overflow: hidden; /* hides image overflow */
+  }
+}
