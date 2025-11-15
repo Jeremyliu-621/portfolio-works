@@ -338,7 +338,8 @@ h3 {
 .project .card {
   padding: 20px;
   margin: 10px;
-  height: 275px;
+  min-height: 275px; /* ✔ keeps cards tall enough */
+  height: auto; /* ✔ lets content flow naturally */
 }
 
 .card-header {
@@ -429,7 +430,7 @@ h3 {
   background-color: white;
   margin: 0;
   padding: 0;
-  min-height: 35vh;
+  min-height: 37vh;
   border-radius: 10px;
 
   display: flex;
@@ -442,9 +443,19 @@ h3 {
   width: 80%; /* same width as other pages */
 }
 
+.closing-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.closing-buttons {
+  margin-top: 5px;
+}
+
 .contact-img-wrapper {
-  width: 300px; /* whatever size you want your text to appear */
-  height: 80px; /* adjust to match your PNG text height */
+  width: 400px; /* whatever size you want your text to appear */
+  height: auto; /* adjust to match your PNG text height */
   overflow: hidden; /* hides image overflow */
 }
 
