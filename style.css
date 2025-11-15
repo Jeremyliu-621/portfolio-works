@@ -493,6 +493,17 @@ h3 {
     width: 90%;
   }
 
+  .left-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-text p {
+    text-align: center;
+  }
+
   .social-btn {
     background-color: #eeeeee;
     color: #393e46;
@@ -512,7 +523,7 @@ h3 {
   .right,
   .carousel {
     flex: 1 1 auto;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
   }
 
   .project {
