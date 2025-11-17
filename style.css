@@ -427,10 +427,35 @@ h3 {
   max-width: 1000px; /* you can tweak this */
 }
 
+.video-card-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .video-card .card-img-top {
-  width: 100%;
-  height: 60vh; /* big “video” area */
-  object-fit: contain;
+  width: 70%;
+  height: auto; /* big “video” area */
+  object-fit: cover;
+}
+
+/* Center description horizontally & vertically */
+.video-card .card-body {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center; /* vertical */
+  text-align: center;
+  min-height: 5vh; /* gives vertical room */
+  padding: 20px;
+  margin: 15px;
+}
+
+/* Remove default margins so centering works perfectly */
+.video-card-text,
+.video-card-text p {
+  margin: 0;
+  padding: 0;
 }
 
 .video-btn {
@@ -579,9 +604,7 @@ h3 {
 
   .projects .carousel-item img {
     width: 100%;
-    height: 50vh; /* image takes 35% of the screen height */
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
+    height: 35vh; /* image takes 35% of the screen height */
   }
 
   .skills-img-wrapper {
